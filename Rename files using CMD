@@ -1,0 +1,48 @@
+/*
+    SNAKE-A500 | SNAKE-HLTE
+    December, 2018
+
+    CMD can be used to rename files by using the command
+    ren "OldFileName.fileformat" "NewName.Fileformat"
+
+    This is an attempt to generate multiple lines of
+    that line to rename a list of files
+
+    Then the user can copy those into a .bat
+    file and run it in the folder where the
+    files are stored.This is an attempt to generate
+*/
+#include <stdio.h>
+
+
+int main ()
+
+{
+    int i;  // number of files
+    int j = 0;
+    /* char str; */
+    printf ("Greetings, human! \n");
+    printf ("Enter the number scanf of files \n");
+    scanf("%d",&i);
+    printf ("Type the new file name \n");
+    /* scanf ("%c", &str); */
+    FILE *pToFile = fopen("test.txt","w");  // Opens the text.txt file in writing mode
+    if(pToFile != NULL) // If the pToFile found the the file
+    {
+        while (j <= i) // Why the fuck j <= i doesn't work?
+        {
+            fprintf (pToFile, "ren \"*.txt\" \"new-filename%d.txt\" \n", j); // Change .txt tp what ever
+            /*fprintf (pToFile, "ren \"*.txt\" \"new-filename%d.txt\" \n", j); */
+            j++;
+        }
+            printf("The CMD lines are saved to the test.txt file\n");
+            printf("Change it to .bat and run it \*fingers crossed\* \n");
+            fclose(pToFile);    // Closes thexit(1)e file
+    }
+    else
+        {
+            printf ("Nigga are you trippin\? \n There is no such file \a \a");
+            exit(1);
+        }
+    return (0);
+}
