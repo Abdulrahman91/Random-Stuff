@@ -24,7 +24,7 @@ int main ()
     }
     else
         {
-            printf ("Nigga are you trippin\? \n There is no such file \a \a");
+            printf ("There is no such file \a \a");
             exit(1);
         }
     return (0);
