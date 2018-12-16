@@ -1,17 +1,3 @@
-/*
-    SNAKE-A500
-    December, 2018
-
-    CMD can be used to rename files by using the command
-    ren "OldFileName.fileformat" "NewName.Fileformat"
-
-    This is an attempt to generate multiple lines of
-    that line to rename a list of files
-
-    Then the user can copy those into a .bat
-    file and run it in the folder where the
-    files are stored.This is an attempt to generate
-*/
 #include <stdio.h>
 
 
