@@ -13,14 +13,14 @@ int main ()
     FILE *pToFile = fopen("test.txt","w");  // Opens the text.txt file in writing mode
     if(pToFile != NULL) // If the pToFile found the the file
     {
-        while (j <= i) // Why the fuck j <= i doesn't work?
+        while (j <= i)
         {
             fprintf (pToFile, "ren \"*.txt\" \"new-filename%d.txt\" \n", j); // Change .txt tp what ever
             j++;
         }
             printf("The CMD lines are saved to the test.txt file\n");
             printf("Change it to .bat and run it \*fingers crossed\* \n");
-            fclose(pToFile);    // Closes thexit(1)e file
+            fclose(pToFile);    // Close the file
     }
     else
         {
