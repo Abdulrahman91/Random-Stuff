@@ -1,6 +1,3 @@
-# Random-Stuff
-Just some random scripts
-
 CMD can be used to rename files by using the command
 ren "OldFileName.fileformat" "NewName.Fileformat"
 
